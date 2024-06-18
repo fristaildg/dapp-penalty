@@ -5,7 +5,7 @@ import { useAppSelector } from './store';
 import { selectors } from './features/login/slice/login.slice';
 import { TransferRequestList } from './features/transfer-request-list/transfer-request-list';
 import { TransferRequestForm } from './features/transfer-request-form/transfer-request-form';
-import styles from './App.module.css';
+import styles from './app.module.css';
 import { AppHeader } from './features/app-header/app-header';
 
 function App() {

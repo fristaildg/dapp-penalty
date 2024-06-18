@@ -1,30 +1,46 @@
-# React + TypeScript + Vite
+# Dapp-Penalty Documentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interview challenge application. 
 
-Currently, two official plugins are available:
+## Tech stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React + TypeScript**: Utilizes React with TypeScript for type safety and efficient development.
+- **Redux + Redux Toolkit**: For global state management.
+- **Radix UI**: As the base component library.
+- **Vite Integration**: for fast development and hot module replacement.
+- **ESLint Configuration**: Provides a basic setup with options to extend for production applications.
 
-## Expanding the ESLint configuration
+## Project Structure
+- **`src/components`**: Reusable components unaware of any business logic.
+- **`src/features`**: Business logic components and screens that are hooked up to the store.
+- **`src/app`**: Main route component.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+### Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/fristaildg/dapp-penalty
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd dapp-penalty
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running the Application
+
+Start the development server:
+```bash
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Building the Application
+
+Build for production:
+```bash
+npm run build
+```
