@@ -1,0 +1,3 @@
+.radix-themes:where([data-is-root-theme='true']) {
+  height: 1px;
+}
